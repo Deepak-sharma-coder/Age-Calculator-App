@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #640D5F, #3D74B6);
+    color: #fff;
+    padding: 10px;
+}
+
+.calculator{
+    width:100%;
+    max-width:600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator h1{
+    font-size: 60px;
+    animation: heading 5s ease infinite alternate;
+}
+
+h1 img{
+    width: 40px;
+    margin-right: 10px;
+    border: 2px solid;
+    animation: BorderColor 5s ease infinite alternate;
+}
+
+@keyframes heading{
+   0%{
+    color: red;
+   }
+   20%{
+    color: blue;
+   }
+   40%{
+    color: green;
+   }
+   60%{
+    color: #3D74B6;
+   }
+   80%{
+    color: #090040;
+   }
+   100%{
+    color: #B6F500;
+   }
+}
+
+@keyframes BorderColor{
+     0%{
+    color: red;
+   }
+   20%{
+    color: blue;
+   }
+   40%{
+    color: green;
+   }
+   60%{
+    color: #3D74B6;
+   }
+   80%{
+    color: #090040;
+   }
+   100%{
+    color: #B6F500;
+   }
+}
+
+.calculator h1 span{
+    color: #0E2148;
+}
+
+.input-box{
+    margin: 40px 0;
+    padding: 35px;
+    border: 3px solid ;
+    background-color: #BCCCDC;
+    display: flex;
+    align-items: center;
+    animation: BorderColor 5s ease infinite alternate;
+
+}
+
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px;
+    border: 2px solid ;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    animation: BorderColor 5s ease infinite alternate;
+}
+
+/* It is i will create for when i click anywhere from the input when my calender are open  */
+/* .input-box input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+} */
+
+
+
+
+.input-box button{
+    background: #ffff76;
+    border: 2px solid;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    animation: BorderColor 5s ease infinite alternate;
+
+}
+
+#result{
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    color: red;
+    border: 2px solid ;
+    animation: BorderColor 5s ease infinite alternate;
+
+}
+
+#result span{
+    color: white;
+    border: 2px solid;
+    animation: BorderColor 5s ease infinite alternate;
+
+}
+
